@@ -19,5 +19,11 @@
 
 <div class="grid w-full max-w-sm items-center">
   <Label class="text-left pb-1.5" for={id}>{label}</Label>
-  <Input {id} type="file" {accept} on:change={handleFileChange} />
+  <Input
+    {id}
+    type="file"
+    {accept}
+    on:change={handleFileChange}
+    class="hidden"
+  />
 </div>

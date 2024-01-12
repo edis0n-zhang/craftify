@@ -1,12 +1,20 @@
 <script>
+  import LightSwitch from "$lib/components/LightSwitch.svelte";
+  import { Lightbulb } from "lucide-svelte";
+
+  function handleClick() {
+    window.location.href = "https://edisonzhang.me/";
+  }
 </script>
 
-<header
-  class="sticky z-10 top-0 inset-x-0 border-b
-    dark:bg-black light:bg-white"
->
-  <nav
-    class="flex items-center justify-between max-w-5xl
-    mx-auto px-4 h-24"
-  ></nav>
-</header>
+<div class="navbar sticky w-full p-4 flex justify-between">
+  <button class="flex items-center" on:click={handleClick}>
+    <Lightbulb class="h-[2rem] w-[2rem] hover:fill-yellow-500" />
+    <p class="font-bold font:Montserrat">edison zhang</p>
+  </button>
+  <LightSwitch />
+</div>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+</style>
