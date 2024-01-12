@@ -20,7 +20,7 @@
   <Dialog.Trigger
     class="{buttonVariants({
       variant: 'outline',
-    })} bg-green-600 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-600 min-h-14 text-white hover:text-white"
+    })} dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-600 min-h-14 text-white hover:text-white bg-green"
   >
     <p class="text-3xl">OpenAI API Token</p>
   </Dialog.Trigger>
